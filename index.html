@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Evelyn Epprecht - Personal Portfolio Website</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet"
@@ -14,9 +14,10 @@
 </head>
 <body>
     <!---------------------header---------------------->
-    <header>
-        <a href="#" class="logo"><img src="img/logo.png">
+    <header class="sticky">
+        <a href="#" class="logo"><img src="img/logo.png"></a>
         <div class="bx bx-menu" id="menu-icon"></div>
+
         <ul class="navlist">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -28,11 +29,11 @@
     </header>
 
     <!----------------------home----------------------->
-    <section class="home" id="home"></section>
+    <section class="home" id="home">
         <div class="home-text">
             <h3>Hello, I'm</h3>
             <h1>Evelyn Epprecht<h1>
-            <h5>A Full-stack Developer <span>From São Paulo</span></h5>
+            <h5>A Full-stack Developer <span>from São Paulo</span></h5>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis neque reprehenderit iste. Iste debitis quas soluta, deserunt consequatur repellat hic fugiat, consequuntur doloribus distinctio quibusdam mollitia delectus inventore qui veritatis.</p>
 
             <div class="social">
@@ -47,6 +48,109 @@
         <div class="home-img">
             <img src="img/main.png">
         </div>
+    </section>
+
+    <!------------------sub service-------------------->
+    <section class="=sub-service">
+        <div class="items">
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="img/target.svg">
+                </div>
+                <h3>Pixel Perfect</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repudiandae provident necessitatibus cupiditate a, repellat hic iure excepturi amet eos voluptates sunt velit quia adipisci impedit delectus magni consequuntur error.</p>
+            </div>
+
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="img/energy.svg">
+                </div>
+                <h3>Awesome Idea</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repudiandae provident necessitatibus cupiditate a, repellat hic iure excepturi amet eos voluptates sunt velit quia adipisci impedit delectus magni consequuntur error.</p>
+            </div>
+
+            <div class="sub-box">
+                <div class="sub-img">
+                    <img src="img/brush.svg">
+                </div>
+                <h3>High Quality</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi repudiandae provident necessitatibus cupiditate a, repellat hic iure excepturi amet eos voluptates sunt velit quia adipisci impedit delectus magni consequuntur error.</p>
+            </div>
+        </div>
+    </section>
+
+    <!---------------------About----------------------->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="img/about.jpg">
+        </div>
+
+        <div class="about-text">
+                <h3>I,m a Full-stack Developer</h3>
+                <h2>I can develop whatever you want</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae doloremque maxime quod sint? Aliquam nemo doloribus minus sunt repellat rem dolorem recusandae autem. Exercitationem reprehenderit rem nisi recusandae soluta accusantium?</p>
+                <a href="#" class="btn">Hire Me</a>
+        </div>
+    </section>
+    <!-------------------Portfolio--------------------->
+    <section class="portfolio" id="porfolio">
+        <div class="heading">
+            <h3>Portfolio</h3>
+            <h2>My Amazing Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi similique modi autem cupiditate ea maxime, at quisquam commodi sit molestias alias tenetur, exercitationem nihil inventore adipisci magni cumque eligendi eos.</p>
+        </div>
+
+        <div class="portfolio-content">
+            <div class="col">
+                <img src="img/work1.jpg">
+                <div class="layer">
+                    <h3>Full-stack Developer</h3>
+                    <h5>Popup</h5>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/work2.jpg">
+                <div class="layer">
+                    <h3>Full-stack Developer</h3>
+                    <h5>Popup</h5>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/work3.jpg">
+                <div class="layer">
+                    <h3>Full-stack Developer</h3>
+                    <h5>Popup</h5>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/work4.jpg">
+                <div class="layer">
+                    <h3>Full-stack Developer</h3>
+                    <h5>Popup</h5>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/work5.jpg">
+                <div class="layer">
+                    <h3>Full-stack Developer</h3>
+                    <h5>Popup</h5>
+                </div>
+            </div>
+
+            <div class="col">
+                <img src="img/work6.jpg">
+                <div class="layer">
+                    <h3>Full-stack Developer</h3>
+                    <h5>Popup</h5>
+                </div>
+            </div>
+
+        </div>
+    </section>
     <!------------------Link para JS------------------->
     <script type="text/javascript" src="js/script.js"></script>
 </body>
