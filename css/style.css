@@ -166,7 +166,7 @@ span{
 }
 
 .social a:hover{
-    transform: social(1.1);
+    transform: scale(1.2);
     background: var(--main-color);
     transition: .5s;
 }
@@ -303,7 +303,7 @@ header.sticky{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
     gap: 2rem;
     align-items: center;
     margin-top: 5rem;
@@ -513,6 +513,7 @@ header.sticky{
     outline: none;
     margin:0 10px 20px 0;
     border-radius: 30px;
+   
 }
 
 .contact .action form input[type="submit"]{
@@ -523,6 +524,7 @@ header.sticky{
     outline: none;
     margin:0 10px 20px 0;
     border-radius: 30px;
+    cursor:pointer;
 }
 
 .ends{
@@ -565,8 +567,8 @@ header.sticky{
   
 
 @media (max-width: 970px){
-    @menu-icon{
-        display:block;
+    #menu-icon{
+        display: block;
     }
 
     .home{
