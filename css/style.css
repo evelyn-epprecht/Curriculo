@@ -19,10 +19,10 @@
 }
 
 body{
-    box-sizing: border-box;
     background: var(--bg--color);
     color:var(--text-color);
     overflow-x: hidden;
+    
 }
 
 header{
@@ -539,6 +539,10 @@ header.sticky{
 }
 
 @media (max-width: 1425px){
+    body{
+        overflow-x: hidden;
+    }
+
     header{
         padding: 16px 3%;
         transition: .3s;    
@@ -569,6 +573,9 @@ header.sticky{
   
 
 @media (max-width: 970px){
+    body{
+        overflow-x: hidden;
+    }
     #menu-icon{
         display: block;
     }
@@ -611,6 +618,9 @@ header.sticky{
 }
 
 @media (max-width: 800px){
+    body{
+        overflow-x: hidden;
+    }
     .home{
         grid-template-columns: 1fr;
         min-height: 130vh;
