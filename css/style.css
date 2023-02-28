@@ -87,7 +87,7 @@ header{
 }
 
 .top-btn{
-    display: inline-black;
+    display: inline-block;
     padding: 9px 30px;
     background: transparent;
     border:2px solid var(--main-color);
@@ -97,6 +97,7 @@ header{
     font-size: var(--p-font);
     font-weight: 500;
     transition: ease .50s;
+    
 }
 
 .top-btn:hover{
