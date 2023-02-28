@@ -22,6 +22,7 @@ body{
     background: var(--bg--color);
     color:var(--text-color);
     overflow-x: hidden;
+    box-sizing: border-box;
     
 }
 
@@ -541,6 +542,7 @@ header.sticky{
 @media (max-width: 1425px){
     body{
         overflow-x: hidden;
+        box-sizing: border-box;
     }
 
     header{
@@ -575,6 +577,7 @@ header.sticky{
 @media (max-width: 970px){
     body{
         overflow-x: hidden;
+        box-sizing: border-box;
     }
     #menu-icon{
         display: block;
@@ -620,6 +623,7 @@ header.sticky{
 @media (max-width: 800px){
     body{
         overflow-x: hidden;
+        box-sizing: border-box;
     }
     .home{
         grid-template-columns: 1fr;
