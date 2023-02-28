@@ -19,8 +19,10 @@
 }
 
 body{
+    box-sizing: border-box;
     background: var(--bg--color);
     color:var(--text-color);
+    overflow-x: hidden;
 }
 
 header{
