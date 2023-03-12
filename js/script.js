@@ -33,3 +33,9 @@ function unloadScrollBars() {
     document.body.scrollX = "no"; // IE
 }
 unloadScrollBars();
+
+/*********Função par a data (ano) estar sempre atualizada na página******************/
+const data = new Date ();
+data2 = data.getFullYear();
+const ano = document.querySelector('#ano');
+ano.innerHTML = data2;
