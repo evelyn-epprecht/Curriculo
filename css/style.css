@@ -322,7 +322,7 @@ header.sticky{
 
 .portfolio-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
     gap: 2rem;
     align-items: center;
     margin-top: 5rem;
@@ -395,7 +395,7 @@ header.sticky{
 
 .service-content{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
     gap: 2rem;
     align-items: center;
     margin-top: 5rem; 
@@ -508,6 +508,15 @@ header.sticky{
     background-size: cover;
 }
 
+input{
+    display: block;
+   
+    
+}
+.contact .action form{
+    align-items: center;
+
+}
 .center h3{
     font-size: 30px;
     font-weight: 500;
@@ -522,7 +531,7 @@ header.sticky{
     margin-bottom: 25px;
 }
 
-.contact .action form input[type="email"]{
+.contact .action form textarea{
     max-width: 100%;
     width: 470px;
     padding: 12px 15px;
@@ -541,10 +550,12 @@ header.sticky{
     color: var(--bg--color);
     border:none;
     outline: none;
-    margin:0 10px 20px 0;
+    margin:0 10px 20px 25%;
     border-radius: 30px;
     cursor:pointer;
     transition: ease .40s;
+    width:50%;
+    
 }
 
 .contact .action form input[type="submit"]:hover{
@@ -685,7 +696,7 @@ transform: scale(1.1);
      }
 
      @media (max-width: 540px){
-        .contact .action form input[type="email"]{
+        .contact .action form textarea{
             width: 310px;
 
         }
