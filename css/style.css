@@ -351,6 +351,7 @@ header.sticky{
     left: 0;
     border-radius: 12px;
     transition: all .40s;
+
 }
 
 .layer:hover{
@@ -363,7 +364,7 @@ header.sticky{
     font-size: 25px;
     font-weight: 500;
     color: var(--bg--color);
-    bottom:0;
+    bottom:10px;
     left: 50%;
     transform: translate(-50%);
     opacity: 0;
@@ -386,6 +387,7 @@ header.sticky{
     transform: translate(-50%);
     opacity: 0;
     transition: all .40s;
+    
 }
 
 .layer:hover h5{
