@@ -697,8 +697,13 @@ transform: scale(1.1);
 
      @media (max-width: 540px){
         .contact .action form textarea{
-            width: 310px;
-
+            width: 220px;
         }
+
+        .top-btn{
+            padding: 9px 30px;
+            font-size: 10px;
+            transition: ease .50s;
+        }          
      }
 }
