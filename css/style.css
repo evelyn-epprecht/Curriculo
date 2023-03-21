@@ -472,11 +472,12 @@ header.sticky{
     background: #fff;
     box-shadow: 18px 0px 87px 0px rgb(10 15 70/ 7%); 
     border-radius: 12px;
-    padding: 50px 50px 50px 50px;
+    padding: 40px 50px 50px 50px;
     transition: ease .40s;
-    cursor: pointer;
     width:24rem;
     height: 15em;
+    justify-content: space-between;
+    gap: 2rem;
 
 }
 
@@ -508,20 +509,23 @@ header.sticky{
     background: #8067f0eb;
     width: 64%;
     margin:100px auto;
-    padding: 70px 150px;
     display: flex;
+    padding: 70px 150px;
     align-items: center;
     justify-content: center;
-    text-align: center;
     border-radius: 12px;
     background-image: url(../img/intro.png);
     background-size: cover;
 }
 
-input{
+input,label{
     display: block;
    
     
+}
+label{
+    color:var(--bg--color);
+    padding: 12px 15px;
 }
 .contact .action form{
     align-items: center;
@@ -532,6 +536,7 @@ input{
     font-weight: 500;
     margin-bottom: 3px;
     color:var(--bg--color);
+    text-align: center;
 }
 
 .center p{
@@ -539,19 +544,31 @@ input{
     color: var(--bg--color);
     line-height: 26px;
     margin-bottom: 25px;
+    text-align: center;
 }
 
 .contact .action form textarea{
     max-width: 100%;
     width: 470px;
     padding: 12px 15px;
-    background: var(--bg--color);
     color: var(--text-color);
     border:none;
     outline: none;
     margin:0 10px 20px 0;
-    border-radius: 30px;
+    border-radius: 20px;
    
+}
+
+.contact .action form input[type="text"], [type="email"]{
+    max-width: 100%;
+    width: 470px;
+    height: 65px;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    align-items: center;
 }
 
 .contact .action form input[type="submit"]{
@@ -561,7 +578,7 @@ input{
     border:none;
     outline: none;
     margin:0 10px 20px 25%;
-    border-radius: 30px;
+    border-radius: 20px;
     cursor:pointer;
     transition: ease .40s;
     width:50%;
@@ -709,11 +726,25 @@ transform: scale(1.1);
         .contact .action form textarea{
             width: 220px;
         }
+        
+        .contact .action form input[type="text"]{
+            width: 220px;
+            height: auto;
+        }
 
         .top-btn{
             padding: 9px 30px;
             font-size: 10px;
             transition: ease .50s;
-        }          
+        }    
+        
+        .wrap{
+            width: auto;
+            height: auto;
+        }
+
+        form{
+            width: 220px;
+        }
      }
 }

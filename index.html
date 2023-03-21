@@ -227,11 +227,24 @@
             <div class="center">
                 <h3>Gostou do meu perfil?</h3>
                 <p>Me mande uma mensagem</p>
+                <br>
             </div>
+            
 
             <div class="action">
-                <form method="post" action="email.php">
-                    <textarea name="email" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+                <form action="https://api.staticforms.xyz/submit" method="POST">
+                    <input type="hidden" name="accessKey" value="d3b59e66-17ed-4713-837b-06d0c61346e8">
+                    <input type="hidden" name="redirectTo" value="https://evelyn-epprecht.github.io/Curriculo/">
+
+                    <label for="name">Nome completo:</label>
+                    <input type="text" id="name" name="name" placeholder="Fulano de Tal" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="email@exemplo.com" required> 
+
+                    <label for="message">Mensagem:</label>
+                    <textarea id="message" name="message" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
+
                     <input type="submit" name="subimit" value="Enviar">
                 </form>
             </div>   
