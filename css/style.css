@@ -216,6 +216,7 @@ header.sticky{
     gap: 2rem;
     align-items:start;
     text-align: center;
+    vertical-align:top;
     
     
 }
@@ -224,6 +225,8 @@ header.sticky{
 .sub-box{
     padding:45px 45px 45px 45px;
     transition: ease .50s;
+    width: 23rem;
+    height: 38rem;
     
 }
 
@@ -472,7 +475,12 @@ header.sticky{
     padding: 50px 50px 50px 50px;
     transition: ease .40s;
     cursor: pointer;
+    width:24rem;
+    height: 15em;
+
 }
+
+
 
 .one{
     background: #baebcd;
