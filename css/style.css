@@ -212,21 +212,19 @@ header.sticky{
 
 .items{
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
     gap: 2rem;
     align-items:start;
     text-align: center;
     vertical-align:top;
-    
-    
 }
 
 
 .sub-box{
     padding:45px 45px 45px 45px;
     transition: ease .50s;
-    width: 23rem;
-    height: 38rem;
+    width: 365px;
+    height: 608px;
     
 }
 
@@ -462,8 +460,7 @@ header.sticky{
 .cta-box{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-    gap: 2rem;
-    align-items: center;
+    gap: 1rem;
     margin-top: 5rem; 
     text-align: center;
 }
@@ -474,11 +471,8 @@ header.sticky{
     border-radius: 12px;
     padding: 40px 50px 50px 50px;
     transition: ease .40s;
-    width:24rem;
-    height: 15em;
-    justify-content: space-between;
-    gap: 2rem;
-
+    width:384px;
+    height: 212px;
 }
 
 
@@ -627,9 +621,16 @@ transform: scale(1.1);
     :root{
         --big-font:4rem;
         --h2-font:2.3rem;
-        --p-font:1rem;
+        --p-font:0.9rem;
         transition: .3s;
     }
+
+    .items{
+        width: auto;
+        height: auto;
+    }
+
+    
 }
   
 
@@ -677,9 +678,23 @@ transform: scale(1.1);
      .navlist.active{
         top:100%;
      }
+
+     .wrap{
+            width: auto;
+        }
+
+        .items{
+            display:grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 2rem;
+            align-items:start;
+            text-align: center;
+            vertical-align:top;
+        }
+
 }
 
-@media (max-width: 800px){
+@media (max-width: 820px){
     body{
         overflow-x: hidden;
         box-sizing: border-box;
@@ -722,6 +737,12 @@ transform: scale(1.1);
         transition: .3s;
      }
 
+    .wrap{
+        height: auto;
+    }
+     
+}
+
      @media (max-width: 540px){
         .contact .action form textarea{
             width: 220px;
@@ -743,8 +764,9 @@ transform: scale(1.1);
             height: auto;
         }
 
+        
         form{
             width: 220px;
         }
+
      }
-}
