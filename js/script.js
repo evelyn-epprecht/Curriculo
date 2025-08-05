@@ -34,8 +34,45 @@ function unloadScrollBars() {
 }
 unloadScrollBars();
 
-/*********Função par a data (ano) estar sempre atualizada na página******************/
+/*********Função para a data (ano) estar sempre atualizada na página******************/
 const data = new Date ();
 data2 = data.getFullYear();
 const ano = document.querySelector('#ano');
 ano.innerHTML = data2;
+
+/*********Função para confirmar o envio******************/
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault(); // Impede o envio automático do formulário
+
+    const form = this;
+
+    fetch("https://api.staticforms.xyz/submit", {
+        method: "POST",
+        body: new FormData(form)
+    })
+    .then(response => {
+        if (response.ok) {
+            form.reset();
+            Swal.fire({
+                title: "Sucesso!",
+                text: "Mensagem enviada!",
+                icon: "success"
+            });
+        } else {
+            Swal.fire({
+                title: "Erro!",
+                text: "Não foi possível enviar a mensagem.",
+                icon: "error"
+            });
+        }
+    })
+    .catch(() => {
+        Swal.fire({
+            title: "Erro!",
+            text: "Erro de conexão com o servidor.",
+            icon: "error"
+        });
+    });
+});
+
+

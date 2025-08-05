@@ -12,7 +12,7 @@
     --bg--color: #fff;
     --text-color: #000;
     --secound-color: #a09dab;
-    --main-color: #f75023;
+    --main-color: #258EE9;
     --big-font:5rem;
     --h2-font: 3rem;
     --p-font:1.1rem;
@@ -41,8 +41,9 @@ header{
 }
 
 .logo img {
+    margin-top:6px;
     max-width: 100%;
-    width: 160px;
+    width: 140px;
     height: auto;
 
 }
@@ -117,7 +118,7 @@ padding: 100px 18%;
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    background: url(../img/background.jpg);
+    background: url(../img/background2.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
@@ -168,7 +169,7 @@ span{
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background: rgba(128,103,240,1);
+    background: #0E4563;
     font-size: 17px;
     color: var(--bg--color);
     margin-right: 22px;
@@ -211,21 +212,23 @@ header.sticky{
 }
 
 .items{
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, auto));
-    gap: 2rem;
-    align-items:start;
-    text-align: center;
-    vertical-align:top;
+   display: grid;
+       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+       gap: 2rem;
+       align-items: start;
+       text-align: center;
+       justify-content: center; /* centraliza o grid dentro do container */
+       padding: 0.1rem; /* espaçamento interno opcional */
 }
 
 
 .sub-box{
-    padding:45px 45px 45px 45px;
-    transition: ease .50s;
-    width: 365px;
-    height: 608px;
-    
+   padding: 25px;
+       transition: ease 0.5s;
+       max-width: 365px;
+       width: 100%;
+       height: 100%; /* mais responsivo */
+       margin: 0 auto; /* centraliza individualmente caso sobre espaço */
 }
 
 
@@ -294,7 +297,7 @@ header.sticky{
 }
 
 .about-text i{
-    color: rgba(128,103,240,1);
+    color: #258EE9;
     margin-right: 15px;
 }
 
@@ -459,10 +462,11 @@ header.sticky{
 
 .cta-box{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1rem;
     margin-top: 5rem; 
     text-align: center;
+    justify-content: center;
 }
 
 .wrap{
@@ -471,22 +475,23 @@ header.sticky{
     border-radius: 12px;
     padding: 40px 50px 50px 50px;
     transition: ease .40s;
-    width:384px;
-    height: 212px;
+    width:100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 
 
 .one{
-    background: #baebcd;
+    background: #93C4E6;
 }
 
 .two{
-    background: #d9d1fa;
+    background: #A5E7F7;
 }
 
 .three{
-    background: #ffaedc;
+    background: #8BCBF5;
 }
 
 .wrap h3{
@@ -508,7 +513,7 @@ header.sticky{
     align-items: center;
     justify-content: center;
     border-radius: 12px;
-    background-image: url(../img/intro.png);
+    background-image: url(../img/intro.jpg);
     background-size: cover;
 }
 
@@ -685,7 +690,7 @@ transform: scale(1.1);
 
         .items{
             display:grid;
-            grid-template-columns: repeat(2,1fr);
+            grid-template-columns: repeat(1,1fr);
             gap: 2rem;
             align-items:start;
             text-align: center;
@@ -758,7 +763,7 @@ transform: scale(1.1);
             font-size: 10px;
             transition: ease .50s;
         }    
-        
+
         .wrap{
             width: auto;
             height: auto;

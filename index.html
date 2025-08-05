@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Evelyn Epprecht - Personal Portfolio Website</title>
-    <link rel="icon" href="img/icone.png">
+    <link rel="icon" href="img/icone_.png">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet"
     href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
@@ -27,14 +27,14 @@
             <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="#contact">Contato</a></li>
         </ul>
-        <a href="#" download  target="_blank" class="top-btn">Download CV</a>
+        <a download href="CV_Evelyn_Ribeiro_Epprecht.pdf" target="_blank" class="top-btn">Download CV</a>
     </header>
 
     <!----------------------home----------------------->
     <section class="home" id="home">
         <div class="home-text">
             <h3>Olá, eu sou</h3>
-            <h1>Evelyn Epprecht<h1>
+            <h1>Evelyn Epprecht</h1>
             <h5>Uma <span>Full-stack</span> Developer de São Paulo</h5>
             <p>Sou uma jovem desenvolvedora, fascinada pela tecnologia e toda a sua aplicação. 
                 Busco sempre me atualizar e reforçar todos os conhecimentos já adquiridos, tendo em vista
@@ -95,7 +95,7 @@
 
         <div class="about-text">
                 <h3>Informações Pessoais</h3>
-                <h2>Um pouco sobre mim..</h2>
+                <h2>Um pouco sobre mim...</h2>
                 <p><i class="bx bx-child"></i>Nome: Evelyn Ribeiro Epprecht</p>
                 <p><i class='bx bx-calendar'></i>Data de nascimento: 23/06/2003</p>
                 <p><i class="bx bxs-pin"></i>Endereço: Jardim Monte Serrat, Santa Isabel -SP</p>
@@ -143,33 +143,32 @@
         <div class="cta-box">
             <div class="wrap one">
                 <h3>Desenvolvimento</h3>
-                <p><i class='bx bxs-pencil'></i>Linguagens de Marcação: HTML5;</p>
-                <p><i class='bx bxs-pencil'></i>Linguagens de Estilo: CSS3;</p>
-                <p><i class='bx bxs-pencil'></i>Linguagens de Programação: Java, JavaScript, Python, PHP, C, C++, C#;</p>
-                <p><i class='bx bxs-pencil'></i>Back-end: PHP, Python (Django), Java (JavaFX);</p>
-                <p><i class='bx bxs-pencil'></i>Front-end: HTML5, CSS3, JavaScript (React, Angular);</p>
+                <p><b>Linguagens de Marcação:</b> HTML5;</p>
+                <p><b>Linguagens de Estilo:</b> CSS3;</p>
+                <p><b>Linguagens de Programação:</b> Java, JavaScript, Python, PHP, C, C++, C#;</p>
+                <p><b>Back-end:</b> PHP, Python (Django), Java (JavaFX);</p>
+                <p><b>Front-end:</b> HTML5, CSS3, JavaScript (React, Angular);</p>
             </div>
 
             <div class="wrap two">
                 <h3>Frameworks e Ferramentas</h3>
-                <p><i class='bx bxs-pencil'></i>Bootstrap;</p>
-                <p><i class='bx bxs-pencil'></i>React;</p>
-                <p><i class='bx bxs-pencil'></i>Angular;</p>
-                <p><i class='bx bxs-pencil'></i>Django;</p>
-                <p><i class='bx bxs-pencil'></i>JavaFX;</p>
-                <p><i class='bx bxs-pencil'></i>Git e GitHub (controle de versão);</p>
-                <p><i class='bx bxs-pencil'></i>Power BI (análise de dados);</p>
-                <p><i class='bx bxs-pencil'></i>Práticas de DevOps;</p>
+                <p>Bootstrap;</p>
+                <p>React;</p>
+                <p>Angular;</p>
+                <p>Django;</p>
+                <p>JavaFX;</p>
+                <p>Git e GitHub (controle de versão);</p>
+                <p>Power BI (análise de dados);</p>
+                <p>Práticas de DevOps;</p>
             </div>
 
             <div class="wrap three">
                 <h3>Banco de Dados e Outros</h3>
-                <p><i class='bx bxs-pencil'></i>MySQL;</p>
-                <p><i class='bx bxs-pencil'></i>MariaDB;</p>
-                <p><i class='bx bxs-pencil'></i>SQL Server;</p>
-                <p><i class='bx bxs-pencil'></i>Microsoft Office (avançado);</p>
-                <p><i class='bx bxs-pencil'></i>Manutenção de hardware/software;</p>
-                <p><i class='bx bxs-pencil'></i>Design gráfico básico.</p>
+                <p>MySQL;</p>
+                <p>SQL Server;</p>
+                <p>Microsoft Office (avançado);</p>
+                <p>Manutenção de hardware/software;</p>
+                <p>Design gráfico básico.</p>
             </div>
         </div>
     </section>
@@ -245,9 +244,9 @@
             
 
             <div class="action">
-                <form action="https://api.staticforms.xyz/submit" method="POST">
+                <form id="contactForm" action="https://api.staticforms.xyz/submit" method="POST">
                     <input type="hidden" name="accessKey" value="d3b59e66-17ed-4713-837b-06d0c61346e8">
-                    <input type="hidden" name="redirectTo" value="https://evelyn-epprecht.github.io/Curriculo/">
+                    <input type="hidden" name="redirectTo" value="index.html">
 
                     <label for="name">Nome completo:</label>
                     <input type="text" id="name" name="name" placeholder="Fulano de Tal" required>
@@ -258,7 +257,7 @@
                     <label for="message">Mensagem:</label>
                     <textarea id="message" name="message" cols="30" rows="10" placeholder="Sua mensagem" required></textarea>
 
-                    <input type="submit" name="subimit" value="Enviar">
+                    <input type="submit" name="submit" value="Enviar">
                 </form>
             </div>   
         </div>
@@ -272,5 +271,6 @@
 
     <!------------------Link para JS------------------->
     <script type="text/javascript" src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
