@@ -419,14 +419,16 @@ header.sticky{
 .s img{
    height: 65px;
    width: 65px;
-   background: #f75124;
+   background: #8BCBF5;
    padding: 15px;
    border-radius: 50%;
    margin-bottom: 20px; 
 }
 
+
+
 .s.s-two img{
-    background: #baebcd;
+    background: #258EE9;
 }
 
 .s.s-three img{
@@ -453,6 +455,7 @@ header.sticky{
     font-size: var(--p-font);
     color: var(--secound-color);
     line-height: 28px;
+    text-align:justify;
 }
 
 .row:hover{
@@ -548,7 +551,7 @@ label{
 
 .contact .action form textarea{
     max-width: 100%;
-    width: 470px;
+    width: 600px;
     padding: 12px 15px;
     color: var(--text-color);
     border:none;
@@ -559,28 +562,29 @@ label{
 }
 
 .contact .action form input[type="text"], [type="email"]{
-    max-width: 100%;
-    width: 470px;
-    height: 65px;
-    border:none;
-    outline: none;
-    border-radius: 20px;
-    margin-bottom: 20px;
-    padding: 12px 15px;
-    align-items: center;
+   width: 100%;
+       padding: 12px 15px;
+       font-size: --p-font;
+       border: none;
+       outline: none;
+       border-radius: 20px;
+       margin-bottom: 20px;
+       box-sizing: border-box;
 }
 
 .contact .action form input[type="submit"]{
     padding: 12px 40px;
     background: var(--main-color);
     color: var(--bg--color);
-    border:none;
+    border: none;
     outline: none;
-    margin:0 10px 20px 25%;
     border-radius: 20px;
-    cursor:pointer;
+    cursor: pointer;
     transition: ease .40s;
-    width:50%;
+    width: 50%;
+    display: block;
+    margin: 0 auto 20px auto;
+    text-align: center;
     
 }
 
@@ -750,11 +754,11 @@ transform: scale(1.1);
 
      @media (max-width: 540px){
         .contact .action form textarea{
-            width: 220px;
+            width: 100%;
         }
         
         .contact .action form input[type="text"]{
-            width: 220px;
+            width: 100%;
             height: auto;
         }
 
@@ -769,9 +773,12 @@ transform: scale(1.1);
             height: auto;
         }
 
+        .row p{
+            text-align:left;
+        }
         
         form{
-            width: 220px;
+            width: 265px;
         }
 
      }
