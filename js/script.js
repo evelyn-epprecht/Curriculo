@@ -75,4 +75,24 @@ document.getElementById("contactForm").addEventListener("submit", function(e) {
     });
 });
 
+/*********Função para atualizar a idade******************/
+
+function calcularIdade(dia, mes, ano) {
+    const hoje = new Date();
+    let idade = hoje.getFullYear() - ano;
+    const mesAtual = hoje.getMonth() + 1; // Janeiro = 0
+    const diaAtual = hoje.getDate();
+
+    // Se ainda não fez aniversário no ano atual, tira 1
+    if (mesAtual < mes || (mesAtual === mes && diaAtual < dia)) {
+        idade--;
+    }
+
+    return idade;
+}
+
+// Atualiza no HTML
+document.getElementById("idade").textContent = calcularIdade(23, 6, 2003);
+
+
 

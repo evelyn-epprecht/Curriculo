@@ -145,6 +145,10 @@ span{
     color:var(--main-color);
 }
 
+#idade{
+    color:var(--secound-color);
+}
+
 #ano {
     color:var(--text-color)
 }
